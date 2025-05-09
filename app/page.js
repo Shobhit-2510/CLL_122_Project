@@ -27,7 +27,7 @@ export default function Home() {
             className="w-1/3 md:hidden"
             priority
           />
-          <div className="text-[18px] w-1/2 px-10 font-normal leading-8">
+          <div className="text-[18px] md:w-1/2 px-10 font-normal leading-8">
             {`Welcome to CRE-Calcy – Your Smart Chemical Reaction Engineering
             Companion! Whether you're a student, researcher, or engineer,
             CRE-Calcy simplifies complex reactor calculations in seconds.
