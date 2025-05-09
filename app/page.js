@@ -143,8 +143,8 @@ export default function Home() {
             {Conversion(T) > 0 ? Conversion(T) : "Please Fill Required Data"}
           </div>
         </div>
-        <div  className="h-[50vh]" >
-        <Graph Kc={Kc} T={T-50} T1={T1} Cpa={Cpa} Cpb={Cpb} dHro={dHro} To={To}/>
+        <div  className="full" >
+        <Graph Kc={Kc} T={T-50} T1={T1} Cpa={Cpa} Cpb={Cpb} dHro={dHro} To={To} />
         </div>
       </div>
     </>

@@ -24,27 +24,27 @@ ChartJS.register(
   Legend
 );
 
-export default function Graph({Kc, T, T1, Cpa, Cpb, dHro, To}) {
+export default function Graph({ Kc, T, T1, Cpa, Cpb, dHro, To }) {
   function X(T) {
     const dHr = dHro + (Cpb - Cpa) * (T - T1);
     const X = (-Cpa * (T - To)) / dHr;
     return X;
   }
   function Xe(T) {
-    const R = 1.987;  // cal/(mol*K)
-  
+    const R = 1.987; // cal/(mol*K)
+
     // Compute the exponent with a better handling approach
-    const exponent = (dHro / R) * ((1.0 / T1) - (1.0 / T));
+    const exponent = (dHro / R) * (1.0 / T1 - 1.0 / T);
     console.log("Exponent:", exponent);
-  
+
     // Compute Ke with better precision
     const Ke = Kc * Math.exp(exponent);
     console.log("Ke:", Ke);
-  
+
     // Compute Xe with improved calculation
     const XeValue = Ke / (1 + Ke);
     console.log("Xe Value:", XeValue);
-  
+
     return XeValue;
   }
 
@@ -59,7 +59,14 @@ export default function Graph({Kc, T, T1, Cpa, Cpb, dHro, To}) {
       },
       {
         label: "Xe vs T",
-        data: [Xe(T), Xe(T + 20), Xe(T + 40), Xe(T + 60), Xe(T + 80), Xe(T + 100)],
+        data: [
+          Xe(T),
+          Xe(T + 20),
+          Xe(T + 40),
+          Xe(T + 60),
+          Xe(T + 80),
+          Xe(T + 100),
+        ],
         borderColor: "rgb(75, 192, 192)",
         tension: 0.4,
       },
@@ -74,5 +81,11 @@ export default function Graph({Kc, T, T1, Cpa, Cpb, dHro, To}) {
     },
   };
 
-  return <Line data={data} options={options} />;
+  return (
+    <div style={{ width: "800px", height: "" }}>
+      {" "}
+      {/* Adjust size here */}
+      <Line data={data} options={options} />
+    </div>
+  );
 }
