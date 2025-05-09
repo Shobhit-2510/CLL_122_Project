@@ -116,7 +116,7 @@ const Adiabatic = () => {
           />
           <input
             type="number"
-            name="Cpa"
+            name="Cpb"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="Cpb (J/mol K)"
@@ -124,10 +124,10 @@ const Adiabatic = () => {
           />
           <input
             type="number"
-            name="Cpb"
+            name="Cpa"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Cpb (J/mol K)"
+            placeholder="Cpa (J/mol K)"
             onChange={handleChangeCpa}
           />
           <button
