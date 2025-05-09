@@ -67,7 +67,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-blue-200 h-fit gap-8 pt-5">
+      <div className="flex flex-col items-center bg-[rgb(14,17,23)] h-fit gap-8 pt-5 text-white">
         <div className="text-4xl">
           Conversion calculator for Adiabatic Reactor
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
             type="number"
             name="Kc"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="Kc"
             onChange={handleChangeKc}
           />
@@ -85,7 +85,7 @@ export default function Home() {
             type="number"
             name="T"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="Guess T"
             onChange={handleChangeT}
           />
@@ -93,7 +93,7 @@ export default function Home() {
             type="number"
             name="T1"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="T1"
             onChange={handleChangeT1}
           />
@@ -101,7 +101,7 @@ export default function Home() {
             type="number"
             name="To"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="To"
             onChange={handleChangeTo}
           />
@@ -109,7 +109,7 @@ export default function Home() {
             type="number"
             name="dHro"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="dHro"
             onChange={handleChangedHro}
           />
@@ -117,7 +117,7 @@ export default function Home() {
             type="number"
             name="Cpb"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="Cpb"
             onChange={handleChangeCpb}
           />
@@ -125,7 +125,7 @@ export default function Home() {
             type="number"
             name="Cpb"
             id=""
-            className="bg-black text-white w-1/4 px-3 py-1 text-center rounded-md"
+            className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
             placeholder="Cpb"
             onChange={handleChangeCpa}
           />
@@ -136,15 +136,23 @@ export default function Home() {
             Calculate Temperature
           </button>
         </div>
-        <div className="bg-white w-1/3 flex flex-col justify-between px-10 py-4 text-xl rounded-xl">
+        <div className="bg-zinc-700 w-1/3 flex flex-col justify-between px-10 py-4 text-xl rounded-xl">
           <div className="">T : {T}</div>
           <div className="">
             Xe :{" "}
             {Conversion(T) > 0 ? Conversion(T) : "Please Fill Required Data"}
           </div>
         </div>
-        <div  className="full" >
-        <Graph Kc={Kc} T={T-50} T1={T1} Cpa={Cpa} Cpb={Cpb} dHro={dHro} To={To} />
+        <div className="full bg-zinc-700 rounded-3xl p-5">
+          <Graph
+            Kc={Kc}
+            T={T - 50}
+            T1={T1}
+            Cpa={Cpa}
+            Cpb={Cpb}
+            dHro={dHro}
+            To={To}
+          />
         </div>
       </div>
     </>

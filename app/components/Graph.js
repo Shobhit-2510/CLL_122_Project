@@ -54,7 +54,7 @@ export default function Graph({ Kc, T, T1, Cpa, Cpb, dHro, To }) {
       {
         label: "X vs T",
         data: [X(T), X(T + 20), X(T + 40), X(T + 60), X(T + 80), X(T + 100)],
-        borderColor: "rgb(75, 192, 192)",
+        borderColor: "rgb(255, 75, 75)",
         tension: 0.4,
       },
       {
@@ -67,7 +67,7 @@ export default function Graph({ Kc, T, T1, Cpa, Cpb, dHro, To }) {
           Xe(T + 80),
           Xe(T + 100),
         ],
-        borderColor: "rgb(75, 192, 192)",
+        borderColor: "white",
         tension: 0.4,
       },
     ],
@@ -76,10 +76,38 @@ export default function Graph({ Kc, T, T1, Cpa, Cpb, dHro, To }) {
   const options = {
     responsive: true,
     plugins: {
-      legend: { position: "top" },
-      title: { display: true, text: "Plot of Xe and X" },
+      legend: {
+        position: "top",
+        labels: {
+          color: "white",
+        },
+      },
+      title: {
+        display: true,
+        text: "Plot of Xe and X",
+        color: "white",
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: "white",
+        },
+        grid: {
+          color: "white",
+        },
+      },
+      y: {
+        ticks: {
+          color: "white",
+        },
+        grid: {
+          color: "white",
+        },
+      },
     },
   };
+
 
   return (
     <div style={{ width: "800px", height: "" }}>
