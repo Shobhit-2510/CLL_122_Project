@@ -20,7 +20,7 @@ export default function Home() {
         <div className={`mt-10 ${ss.className}`}>CRE Calculator</div>
         <div className="flex flex-row justify-around items-center">
           <div className="text-sm w-1/2 px-10">
-            Welcome to CRE-Calcy – Your Smart Chemical Reaction Engineering
+            {`Welcome to CRE-Calcy – Your Smart Chemical Reaction Engineering
             Companion! Whether you're a student, researcher, or engineer,
             CRE-Calcy simplifies complex reactor calculations in seconds.
             Designed for accuracy and ease, our calculator supports: Batch,
@@ -30,7 +30,7 @@ export default function Home() {
             results, visual insights, and step-by-step outputs tailored for
             chemical engineering. No more manual solving or bulky spreadsheets —
             just clean, intuitive design built for chemical reaction analysis.
-            🔬 Make CRE easy. Make it with CRE-Calcy
+            🔬 Make CRE easy. Make it with CRE-Calcy`}
           </div>
           <Image
             src="/plant.svg"
@@ -38,6 +38,7 @@ export default function Home() {
             width={200}
             height={200}
             className="w-1/3"
+            priority
           />
         </div>
       </div>
