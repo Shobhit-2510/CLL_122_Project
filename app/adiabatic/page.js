@@ -69,7 +69,7 @@ const Adiabatic = () => {
   return (
     <>
       <div className="flex flex-col items-center bg-[rgb(14,17,23)] h-fit gap-8 py-8 text-white">
-        <div className="text-4xl font-extrabold">
+        <div className="text-4xl font-extrabold mx-2 text-center">
           Conversion calculator for Adiabatic Reactor
         </div>
 
@@ -144,7 +144,7 @@ const Adiabatic = () => {
             {Conversion(T) > 0 ? Conversion(T) : "Please Fill Required Data"}
           </div>
         </div>
-        <div className="full bg-zinc-700 rounded-3xl p-5">
+        <div className="md:w-fit w-full flex items-center justify-center bg-zinc-700 rounded-md md:rounded-3xl md:p-5">
           <Graph
             Kc={Kc}
             T={T - 50}

@@ -108,11 +108,11 @@ export default function Graph({ Kc, T, T1, Cpa, Cpb, dHro, To }) {
     },
   };
 
-
   return (
-    <div style={{ width: "800px", height: "" }}>
-      {" "}
-      {/* Adjust size here */}
+    <div
+      // style={{ width: "800px", height: "" }}
+      className="w-[100%] md:w-[800px] flex flex-col items-center"
+    >
       <Line data={data} options={options} />
     </div>
   );
