@@ -75,7 +75,10 @@ const Footer = () => {
           <Link className="text-xs md:text-sm" href={"/adiabatic"}>
             Adiabatic Reactor
           </Link>
-          <Link href={"https://non-adiabatic.streamlit.app/"}>
+          <Link
+            className="text-xs md:text-sm"
+            href={"https://non-adiabatic.streamlit.app/"}
+          >
             Non Adiabatic Reactor
           </Link>
           <Link className="text-xs md:text-sm" href={"/team"}>

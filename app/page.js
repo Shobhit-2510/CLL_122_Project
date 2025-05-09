@@ -15,10 +15,18 @@ export default function Home() {
   return (
     <>
       <div
-        className={`items-center flex flex-col h-screen text-5xl  font-bold text-white bg-gradient-to-br from-gray-900 via-gray-800 to-black gap-10`}
+        className={`items-center flex flex-col  text-5xl  font-bold text-white bg-gradient-to-br from-gray-900 via-gray-800 to-black gap-10 pb-10`}
       >
         <div className={`mt-10 ${ss.className}`}>CRE Calculator</div>
-        <div className="flex flex-row justify-around items-center">
+        <div className="flex flex-col md:flex-row justify-around items-center gap-10">
+          <Image
+            src="/plant.svg"
+            alt="Chemical Plant"
+            width={200}
+            height={200}
+            className="w-1/3 md:hidden"
+            priority
+          />
           <div className="text-[18px] w-1/2 px-10 font-normal leading-8">
             {`Welcome to CRE-Calcy – Your Smart Chemical Reaction Engineering
             Companion! Whether you're a student, researcher, or engineer,
@@ -37,7 +45,7 @@ export default function Home() {
             alt="Chemical Plant"
             width={200}
             height={200}
-            className="w-1/3"
+            className="w-1/3 hidden md:block"
             priority
           />
         </div>
