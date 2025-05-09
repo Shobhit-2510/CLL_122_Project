@@ -19,7 +19,7 @@ export default function Home() {
       >
         <div className={`mt-10 ${ss.className}`}>CRE Calculator</div>
         <div className="flex flex-row justify-around items-center">
-          <div className="text-sm w-1/2 px-10">
+          <div className="text-[18px] w-1/2 px-10 font-normal leading-8">
             {`Welcome to CRE-Calcy – Your Smart Chemical Reaction Engineering
             Companion! Whether you're a student, researcher, or engineer,
             CRE-Calcy simplifies complex reactor calculations in seconds.
