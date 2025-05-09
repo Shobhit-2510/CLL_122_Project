@@ -50,6 +50,7 @@ const Footer = () => {
               <Image
                 src="/github-mark-white.png"
                 className=" w-6 h-6 md:h-8 md:w-8 rounded-full"
+                title="Shobhit Kumar"
                 width={100}
                 height={100}
                 alt="Shobhit Kumar"
@@ -59,6 +60,7 @@ const Footer = () => {
               <Image
                 src="/github-mark-white.png"
                 className=" w-6 h-6 md:h-8 md:w-8 rounded-full"
+                title="Sujal Madaan"
                 width={100}
                 height={100}
                 alt="Sujal Madaan"

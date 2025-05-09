@@ -73,7 +73,7 @@ const Adiabatic = () => {
           Conversion calculator for Adiabatic Reactor
         </div>
 
-        <div className="flex flex-row justify-between content-center items-stretch p-2 md:p-0 md:w-2/3 gap-5 h-48 flex-wrap">
+        <div className="flex flex-row justify-between content-center items-stretch p-2 md:w-2/3 gap-5 h-48 flex-wrap">
           <input
             type="number"
             name="Kc"
@@ -103,7 +103,7 @@ const Adiabatic = () => {
             name="To"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="To (K)"
+            placeholder="Tₒ"
             onChange={handleChangeTo}
           />
           <input
