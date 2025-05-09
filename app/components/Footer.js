@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -46,17 +47,21 @@ const Footer = () => {
           <h1 className="text-sm md:text-xl mb-2">Follow on:</h1>
           <h2 className="text-xs md:text-sm flex justify-evenly">
             <a href="https://github.com/Shobhit-2510" target="_blank">
-              <img
+              <Image
                 src="/github-mark-white.png"
-                title="Shobhit Kumar"
                 className=" w-6 h-6 md:h-8 md:w-8 rounded-full"
+                width={100}
+                height={100}
+                alt="Shobhit Kumar"
               />
             </a>
             <a href="https://github.com/sujalmadaan" target="_blank">
-              <img
+              <Image
                 src="/github-mark-white.png"
-                title="Sujal Madaan"
                 className=" w-6 h-6 md:h-8 md:w-8 rounded-full"
+                width={100}
+                height={100}
+                alt="Sujal Madaan"
               />
             </a>
           </h2>
