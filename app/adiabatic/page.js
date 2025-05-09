@@ -87,7 +87,7 @@ const Adiabatic = () => {
             name="T"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Guess T"
+            placeholder="Guess T (K)"
             onChange={handleChangeT}
           />
           <input
@@ -95,7 +95,7 @@ const Adiabatic = () => {
             name="T1"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="T1"
+            placeholder="T1 (K)"
             onChange={handleChangeT1}
           />
           <input
@@ -103,7 +103,7 @@ const Adiabatic = () => {
             name="To"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="To"
+            placeholder="To (K)"
             onChange={handleChangeTo}
           />
           <input
@@ -111,7 +111,7 @@ const Adiabatic = () => {
             name="dHro"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="dHro"
+            placeholder="ΔHᵣ⁰"
             onChange={handleChangedHro}
           />
           <input
@@ -119,7 +119,7 @@ const Adiabatic = () => {
             name="Cpb"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Cpb"
+            placeholder="Cpb (J/mol K)"
             onChange={handleChangeCpb}
           />
           <input
@@ -127,7 +127,7 @@ const Adiabatic = () => {
             name="Cpb"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Cpb"
+            placeholder="Cpb (J/mol K)"
             onChange={handleChangeCpa}
           />
           <button
