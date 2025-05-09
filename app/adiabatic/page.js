@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
+import React from "react";
 import { useState } from "react";
 import solve from "newton-raphson-method";
 import Graph from "../components/Graph";
 
-export default function adiabatic() {
+const Adiabatic = () => {
   const [Kc, setKc] = useState(100000);
   const [T, setT] = useState(0);
   const [T1, setT1] = useState(298);
@@ -157,4 +158,6 @@ export default function adiabatic() {
       </div>
     </>
   );
-}
+};
+
+export default Adiabatic;
