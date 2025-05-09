@@ -76,10 +76,10 @@ const Adiabatic = () => {
         <div className="flex flex-row justify-between content-center items-stretch p-2 md:w-2/3 gap-5 h-48 flex-wrap">
           <input
             type="number"
-            name="Kc"
+            name="Kc at T1"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Kc"
+            placeholder="Kc at T1(K)"
             onChange={handleChangeKc}
           />
           <input
@@ -103,7 +103,7 @@ const Adiabatic = () => {
             name="To"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Tₒ"
+            placeholder="Tₒ (K)"
             onChange={handleChangeTo}
           />
           <input
@@ -111,7 +111,7 @@ const Adiabatic = () => {
             name="dHro"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="ΔHᵣ⁰"
+            placeholder="ΔHᵣ⁰ cal/mol"
             onChange={handleChangedHro}
           />
           <input
@@ -119,7 +119,7 @@ const Adiabatic = () => {
             name="Cpb"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Cpb (J/mol K)"
+            placeholder="Cpb (cal/mol K)"
             onChange={handleChangeCpb}
           />
           <input
@@ -127,7 +127,7 @@ const Adiabatic = () => {
             name="Cpa"
             id=""
             className="bg-zinc-700 text-white w-1/4 px-3 py-1 text-center rounded-md"
-            placeholder="Cpa (J/mol K)"
+            placeholder="Cpa (cal/mol K)"
             onChange={handleChangeCpa}
           />
           <button
@@ -138,7 +138,7 @@ const Adiabatic = () => {
           </button>
         </div>
         <div className="bg-zinc-700 md:w-2/3 flex flex-col justify-between px-10 py-4 text-xl rounded-xl">
-          <div className="">T : {T}</div>
+          <div className="">T : {T} K</div>
           <div className="">
             Xe :{" "}
             {Conversion(T) > 0 ? Conversion(T) : "Please Fill Required Data"}
