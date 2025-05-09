@@ -4,7 +4,7 @@ import Image from "next/image";
 const Team = () => {
   return (
     <div className="bg-[#0E1117] text-white">
-      <div className="flex flex-row flex-wrap items-center justify-around w-2/3 aspect-square mx-auto p-0">
+      <div className="flex flex-row flex-wrap items-center justify-around w-2/3 aspect-square mx-auto py-3 gap-2">
         <div className="w-fit rounded-full text-center">
           <Image
             src={"shobhit.png"}
