@@ -73,7 +73,7 @@ const Adiabatic = () => {
           Conversion calculator for Adiabatic Reactor
         </div>
 
-        <div className="flex flex-col w-full items-center gap-5 h-48 flex-wrap">
+        <div className="flex flex-row justify-between content-center items-stretch p-2 md:p-0 md:w-2/3 gap-5 h-48 flex-wrap">
           <input
             type="number"
             name="Kc"
@@ -134,17 +134,17 @@ const Adiabatic = () => {
             onClick={handleClick}
             className="bg-blue-600 text-white w-1/4 px-3 py-1 text-center rounded-md cursor-pointer hover:border-1 hover:border-black transition-all"
           >
-            Calculate Temperature
+            Calculate
           </button>
         </div>
-        <div className="bg-zinc-700 w-1/3 flex flex-col justify-between px-10 py-4 text-xl rounded-xl">
+        <div className="bg-zinc-700 md:w-2/3 flex flex-col justify-between px-10 py-4 text-xl rounded-xl">
           <div className="">T : {T}</div>
           <div className="">
             Xe :{" "}
             {Conversion(T) > 0 ? Conversion(T) : "Please Fill Required Data"}
           </div>
         </div>
-        <div className="md:w-fit w-full flex items-center justify-center bg-zinc-700 rounded-md md:rounded-3xl md:p-5">
+        <div className="md:w-fit w-full flex items-center justify-center bg-zinc-700 md:rounded-3xl md:p-5">
           <Graph
             Kc={Kc}
             T={T - 50}
