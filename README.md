@@ -30,7 +30,7 @@ A responsive web application to simulate and analyze the performance of Continuo
 | Layer         | Tools & Libraries                               |
 |---------------|--------------------------------------------------|
 | Frontend      | Next.js (React), Tailwind CSS, Chart.js          |
-| Backend Logic | JavaScript, Newton-Raphson Solver via npm        |
+| Logic         | JavaScript, Newton-Raphson Solver via npm        |
 | Visualization | Chart.js, Matplotlib (Python)                    |
 | Platform      | Vercel (Next.js deployment), Streamlit (Python)  |
 | Others        | Git, GitHub, npm, Streamlit                      |
